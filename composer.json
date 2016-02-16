@@ -1,40 +1,43 @@
 {
-	"name" : "tfox/mpdf-port-bundle",
-	"description" : "A wrapper for mPDF class which allows to use mPDF in Symfony2 projects",
-	"type" : "symfony-bundle",
-	"authors" : [{
-			"name" : "Sergei Beljakov",
-			"email" : "sergei.beljakov@tfox.eu"
-		}
-	],
-	"keywords" : [
+	"name": "tfox/mpdf-port-bundle",
+	"description": "A wrapper for mPDF class which allows to use mPDF in Symfony2 projects",
+	"type": "symfony-bundle",
+	"authors": [{
+		"name": "Sergei Beljakov",
+		"email": "sergei.beljakov@tfox.eu"
+	}],
+	"keywords": [
 		"mPDF",
 		"PDF"
 	],
-	"homepage" : "http://github.com/tasmanianfox/MpdfPortBundle",
-	"license" : [
+	"homepage": "http://github.com/tasmanianfox/MpdfPortBundle",
+	"license": [
 		"MIT"
 	],
-	"require" : {
-		"mpdf/mpdf" : "6.0.*",
-		"symfony/framework-bundle" : "~2.3|~3.0"
+	"repositories": [{
+		"type": "vcs",
+		"url": "https://github.com/AntoineViauBackelite/mpdf.git"
+	}],
+	"require": {
+		"mpdf/mpdf": "dev-develop-php4 as 6.0.0",
+		"symfony/framework-bundle": "~2.3|~3.0"
 	},
-	"require-dev" : {
-		"symfony/security-bundle" : "*",
-		"symfony/yaml" : "*",
-		"symfony/class-loader" : "*",
-		"symfony/browser-kit" : "*",
-		"sensio/framework-extra-bundle" : "*"
+	"require-dev": {
+		"symfony/security-bundle": "*",
+		"symfony/yaml": "*",
+		"symfony/class-loader": "*",
+		"symfony/browser-kit": "*",
+		"sensio/framework-extra-bundle": "*"
 	},
-	"autoload" : {
-		"psr-0" : {
-			"TFox\\MpdfPortBundle" : ""
+	"autoload": {
+		"psr-0": {
+			"TFox\\MpdfPortBundle": ""
 		}
 	},
-	"target-dir" : "TFox/MpdfPortBundle",
-	"extra" : {
-		"branch-alias" : {
-			"dev-master" : "1.3-dev"
+	"target-dir": "TFox/MpdfPortBundle",
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.3-dev"
 		}
 	}
 }
